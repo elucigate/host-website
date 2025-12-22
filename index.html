@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elucigate – The gate to make AI clear and easy to use</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 14c-2-2-5-3-8-2-1-3-4-5-7-5-2 0-4 1-5 2-2-4-6-6-10-5-5 1-8 5-8 10v1c-3 2-5 5-5 9v20c0 6 5 11 11 11h26c6 0 11-5 11-11V24c0-4-2-8-5-10z' fill='%23FFD700'/%3E%3Cpath d='M16 24h32v20c0 4-3 7-7 7H23c-4 0-7-3-7-7V24z' fill='%23FFF4CC'/%3E%3Crect x='14' y='22' width='36' height='6' rx='2' fill='%23FFD700'/%3E%3Ccircle cx='24' cy='35' r='2' fill='%23FFD700' opacity='0.6'/%3E%3Ccircle cx='32' cy='38' r='2' fill='%23FFD700' opacity='0.6'/%3E%3Ccircle cx='40' cy='34' r='2' fill='%23FFD700' opacity='0.6'/%3E%3Ccircle cx='28' cy='42' r='1.5' fill='%23FFD700' opacity='0.4'/%3E%3Ccircle cx='36' cy='43' r='1.5' fill='%23FFD700' opacity='0.4'/%3E%3Cpath d='M46 10c2 0 3 1 4 2l2 2' stroke='%2390EE90' stroke-width='2' stroke-linecap='round' fill='none'/%3E%3Cellipse cx='48' cy='16' rx='4' ry='6' fill='%2390EE90' opacity='0.7'/%3E%3C/svg%3E">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Caveat:wght@700&family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Hand-drawn decorative elements -->
+  <svg class="doodle doodle-1 doodle-lemon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="50" cy="50" rx="35" ry="40"/>
+    <ellipse cx="60" cy="30" rx="8" ry="12" fill="#90EE90"/>
+  </svg>
+
+  <svg class="doodle doodle-2 doodle-circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="40" stroke-linecap="round" stroke-dasharray="5,5"/>
+  </svg>
+
+  <svg class="doodle doodle-3 doodle-wave" viewBox="0 0 150 50" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 25 Q20 10, 40 25 T80 25 T120 25 T150 25" stroke-linecap="round"/>
+  </svg>
+
+  <svg class="doodle doodle-4 doodle-star" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <path d="M50 10 L55 40 L85 40 L60 60 L70 90 L50 70 L30 90 L40 60 L15 40 L45 40 Z"/>
+  </svg>
+
+  <svg class="doodle doodle-5 doodle-squiggle" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20 60 Q40 20, 60 60 T100 60" stroke-linecap="round"/>
+  </svg>
+
+  <svg class="doodle doodle-6 doodle-circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="50" cy="50" rx="35" ry="30" stroke-linecap="round"/>
+  </svg>
+
+  <svg class="doodle doodle-7 doodle-lemon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="50" cy="55" rx="30" ry="35"/>
+  </svg>
+
+  <svg class="doodle doodle-8 doodle-wave" viewBox="0 0 150 50" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 25 Q15 15, 30 25 T60 25 T90 25 T120 25 T150 25" stroke-linecap="round"/>
+  </svg>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <svg class="logo-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 14c-2-2-5-3-8-2-1-3-4-5-7-5-2 0-4 1-5 2-2-4-6-6-10-5-5 1-8 5-8 10v1c-3 2-5 5-5 9v20c0 6 5 11 11 11h26c6 0 11-5 11-11V24c0-4-2-8-5-10z" fill="#FFD700"/>
+          <path d="M16 24h32v20c0 4-3 7-7 7H23c-4 0-7-3-7-7V24z" fill="#FFF4CC"/>
+          <rect x="14" y="22" width="36" height="6" rx="2" fill="#FFD700"/>
+          <circle cx="24" cy="35" r="2" fill="#FFD700" opacity="0.6"/>
+          <circle cx="32" cy="38" r="2" fill="#FFD700" opacity="0.6"/>
+          <circle cx="40" cy="34" r="2" fill="#FFD700" opacity="0.6"/>
+          <circle cx="28" cy="42" r="1.5" fill="#FFD700" opacity="0.4"/>
+          <circle cx="36" cy="43" r="1.5" fill="#FFD700" opacity="0.4"/>
+          <path d="M46 10c2 0 3 1 4 2l2 2" stroke="#90EE90" stroke-width="2" stroke-linecap="round" fill="none"/>
+          <ellipse cx="48" cy="16" rx="4" ry="6" fill="#90EE90" opacity="0.7"/>
+        </svg>
+        <span>Elucigate</span>
+      </a>
+      
+      <div class="search-bar">
+        <input type="text" placeholder="Search products, services, solutions...">
+      </div>
+      
+      <div class="nav-right">
+        <a href="#" class="btn btn-text">Docs</a>
+        <a href="#" class="btn btn-text">Pricing</a>
+        <a href="#" class="btn btn-outline">Log In</a>
+        <a href="#" class="btn btn-dark">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Illustration -->
+  <img src="img/icon8.png" alt="" class="hero-illustration">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Forget everything you know about AI</h1>
+      <p class="hero-subtitle">Life gives you a lemon, make it lemonade. Instant everything. Incredible solutions. Big heart.</p>
+      <a href="#products" class="cta-button">Explore Our Products</a>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="section" id="products">
+    <h2 class="section-title">Trending this week</h2>
+    
+    <!-- Featured Product -->
+    <div class="featured-card-wrapper">
+      <a href="fixmove_website.html" class="product-card featured-card">
+        <span class="product-icon">🛒</span>
+        <h3>Fixmove</h3>
+        <p>Smart shopping cart with autonomous navigation and real-time assistance. Experience the future of retail.</p>
+        <span class="product-tag">Featured • In Development</span>
+      </a>
+    </div>
+
+    <h2 class="section-title" style="margin-top: 120px;">Products</h2>
+    <div class="products-grid">
+      <a href="#" class="product-card">
+        <span class="product-icon">💅</span>
+        <h3>AI Scan DIY</h3>
+        <p>Custom-fit press-on nails powered by AI. Scan your nails, get perfect measurements, order instantly.</p>
+        <span class="product-tag">Coming Soon</span>
+      </a>
+
+      <a href="#" class="product-card">
+        <span class="product-icon">🤖</span>
+        <h3>Heyme</h3>
+        <p>Your personal AI assistant that truly understands context and learns from your interactions.</p>
+        <span class="product-tag">Coming Soon</span>
+      </a>
+
+      <a href="#" class="product-card">
+        <span class="product-icon">✍️</span>
+        <h3>WriteAs</h3>
+        <p>Transform your writing style. Write like Hemingway, Murakami, or anyone. AI-powered style transfer.</p>
+        <span class="product-tag">Coming Soon</span>
+      </a>
+
+      <a href="#" class="product-card">
+        <span class="product-icon">🎨</span>
+        <h3>More Coming</h3>
+        <p>We're constantly building new AI products. Stay tuned for exciting announcements.</p>
+        <span class="product-tag">In Planning</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section" id="services">
+    <h2 class="section-title">Services</h2>
+    <p class="section-subtitle">End-to-end AI solutions to accelerate your business</p>
+    <div class="products-grid">
+      <div class="product-card service-card">
+        <span class="product-icon">💡</span>
+        <h3>AI Consulting</h3>
+        <p>Strategic guidance to identify AI opportunities and create a clear roadmap for implementation in your business.</p>
+      </div>
+      <div class="product-card service-card">
+        <span class="product-icon">⚡</span>
+        <h3>AI Development</h3>
+        <p>Custom AI solutions, automation tools, and full-stack applications built by our expert engineering team.</p>
+      </div>
+      <div class="product-card service-card">
+        <span class="product-icon">📚</span>
+        <h3>AI Education</h3>
+        <p>Comprehensive courses and workshops to help your team understand and leverage cutting-edge AI technologies.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section">
+    <h2 class="section-title">Why Elucigate? 🍋</h2>
+    <p class="section-subtitle">When life gives you lemons, make lemonade</p>
+    <div class="features-grid">
+      <div class="product-card feature-card">
+        <h3>🎯 Small Team, Big Impact</h3>
+        <p>We're a lean studio powered by AI. Move fast, stay efficient, deliver quality every time.</p>
+      </div>
+      <div class="product-card feature-card">
+        <h3>🔬 Research-Backed</h3>
+        <p>Founded by researchers with publications in top venues. We know the cutting edge of AI.</p>
+      </div>
+      <div class="product-card feature-card">
+        <h3>🎨 End-to-End</h3>
+        <p>From concept to deployment. Strategy, design, and engineering all under one roof.</p>
+      </div>
+      <div class="product-card feature-card">
+        <h3>💪 Product-Minded</h3>
+        <p>We don't just build tech—we build products that people actually want to use.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <h2 class="section-title">Ready to build something amazing?</h2>
+    <p class="section-subtitle">Let's turn your ideas into reality with the power of AI</p>
+    <a href="#" class="cta-button">Get Started</a>
+  </section>
+
+  <!-- Bottom decorative elements -->
+  <svg class="doodle doodle-9 doodle-triangle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <path d="M50 15 Q52 15, 85 80 Q85 82, 83 82 L17 82 Q15 82, 15 80 Q48 15, 50 15 Z"/>
+  </svg>
+
+  <svg class="doodle doodle-10 doodle-wave" viewBox="0 0 150 50" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 25 Q20 10, 40 25 T80 25 T120 25 T150 25" stroke-linecap="round"/>
+  </svg>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <svg class="footer-brand-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 14c-2-2-5-3-8-2-1-3-4-5-7-5-2 0-4 1-5 2-2-4-6-6-10-5-5 1-8 5-8 10v1c-3 2-5 5-5 9v20c0 6 5 11 11 11h26c6 0 11-5 11-11V24c0-4-2-8-5-10z" fill="#FFD700"/>
+            <path d="M16 24h32v20c0 4-3 7-7 7H23c-4 0-7-3-7-7V24z" fill="#FFF4CC"/>
+            <rect x="14" y="22" width="36" height="6" rx="2" fill="#FFD700"/>
+            <circle cx="24" cy="35" r="2" fill="#FFD700" opacity="0.6"/>
+            <circle cx="32" cy="38" r="2" fill="#FFD700" opacity="0.6"/>
+            <circle cx="40" cy="34" r="2" fill="#FFD700" opacity="0.6"/>
+            <circle cx="28" cy="42" r="1.5" fill="#FFD700" opacity="0.4"/>
+            <circle cx="36" cy="43" r="1.5" fill="#FFD700" opacity="0.4"/>
+            <path d="M46 10c2 0 3 1 4 2l2 2" stroke="#90EE90" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <ellipse cx="48" cy="16" rx="4" ry="6" fill="#90EE90" opacity="0.7"/>
+          </svg>
+          <span>Elucigate</span>
+        </div>
+        <p class="footer-tagline">Life gives you a lemon, you can always make it as a lemonade.<br>Making AI clear and easy to use for everyone.</p>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Products</h4>
+        <a href="#">Fixmove</a>
+        <a href="#">AI Scan DIY</a>
+        <a href="#">Heyme</a>
+        <a href="#">WriteAs</a>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#">Consulting</a>
+        <a href="#">Development</a>
+        <a href="#">Education</a>
+        <a href="#">Enterprise</a>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      © 2025 Elucigate. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
