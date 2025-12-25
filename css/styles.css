@@ -723,6 +723,47 @@ nav {
   font-weight: 600;
 }
 
+/* Disabled/Non-clickable card styles */
+.product-card.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #F9FAFB;
+  position: relative;
+}
+
+.product-card.disabled:hover {
+  border-color: #F3F4F6;
+  transform: none;
+  box-shadow: none;
+}
+
+.product-card.disabled h3,
+.product-card.disabled p {
+  color: #9CA3AF;
+}
+
+.product-card.disabled .product-icon {
+  opacity: 0.6;
+  filter: grayscale(50%);
+}
+
+/* Coming Soon Badge */
+.coming-soon-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #FEF3C7;
+  color: #92400E;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 1px solid #FDE68A;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
 /* Shop Section */
 .shop-grid {
   display: flex;
